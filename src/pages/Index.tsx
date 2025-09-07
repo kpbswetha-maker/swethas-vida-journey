@@ -13,7 +13,7 @@ const Index = () => {
       
       <main className="container mx-auto px-4 py-12">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold bg-gradient-hero bg-clip-text text-transparent mb-6">
             Swetha's Journey at VidaXL
           </h1>
@@ -34,13 +34,15 @@ const Index = () => {
         </div>
 
         {/* Journey Slideshow */}
-        <div className="mb-16">
+  <div style={{ marginBottom: '0.05rem' }}>
           <JourneySlideshow />
         </div>
       </main>
 
       {/* Advertisement Strip */}
-      <AdvertisementStrip />
+  <div style={{ marginTop: '0.05rem' }}>
+        <AdvertisementStrip />
+      </div>
 
       {/* Info Modal */}
       <InfoModal 

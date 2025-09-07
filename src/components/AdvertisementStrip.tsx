@@ -4,7 +4,7 @@ import { ExternalLink } from 'lucide-react';
 
 export const AdvertisementStrip: React.FC = () => {
   return (
-    <div className="w-full bg-gradient-hero py-8 mt-16">
+  <div className="w-full bg-gradient-hero py-8 mt-2">
       <div className="container mx-auto px-4 text-center">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-white">
@@ -15,14 +15,21 @@ export const AdvertisementStrip: React.FC = () => {
               Quality furniture and home essentials at unbeatable prices
             </p>
           </div>
-          <Button
-            variant="secondary"
-            size="lg"
-            className="bg-white text-vidaxl-primary hover:bg-white/90 transition-all duration-300 whitespace-nowrap"
+          <a
+            href="https://www.vidaxl.nl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none' }}
           >
-            Shop Now
-            <ExternalLink className="ml-2 h-4 w-4" />
-          </Button>
+            <Button
+              variant="secondary"
+              size="lg"
+              className="bg-white text-vidaxl-primary hover:bg-white/90 transition-all duration-300 whitespace-nowrap"
+            >
+              Shop Now
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
         </div>
       </div>
     </div>
